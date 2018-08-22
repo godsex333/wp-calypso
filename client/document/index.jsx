@@ -93,6 +93,12 @@ class Document extends React.Component {
 						}
 						type="text/css"
 					/>
+					{ entrypoint.css.map( asset => (
+						<link key={ asset } rel="stylesheet" href={ asset } type="text/css" />
+					) ) }
+					{ chunkFiles.css.map( asset => (
+						<link key={ asset } rel="stylesheet" href={ asset } type="text/css" />
+					) ) }
 					{ sectionCss && (
 						<link
 							rel="stylesheet"
@@ -171,10 +177,10 @@ class Document extends React.Component {
 							} }
 						/>
 					) }
-					{ entrypoint.map( asset => (
+					{ entrypoint.js.map( asset => (
 						<script key={ asset } src={ asset } />
 					) ) }
-					{ chunkFiles.map( chunk => (
+					{ chunkFiles.js.map( chunk => (
 						<script key={ chunk } src={ chunk } />
 					) ) }
 					<script nonce={ inlineScriptNonce } type="text/javascript">
