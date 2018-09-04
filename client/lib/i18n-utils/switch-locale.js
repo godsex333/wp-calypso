@@ -22,6 +22,7 @@ function languageFileUrl( localeSlug ) {
 }
 
 function setLocaleInDOM( localeSlug, isRTL ) {
+	console.log( 'setting locale in DOM:', localeSlug, isRTL );
 	document.documentElement.lang = localeSlug;
 	document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
 
@@ -34,6 +35,7 @@ function setLocaleInDOM( localeSlug, isRTL ) {
 
 let lastRequestedLocale = null;
 export default function switchLocale( localeSlug ) {
+	console.log( 'switchLocale:', localeSlug );
 	// check if the language exists in config.languages
 	const language = getLanguage( localeSlug );
 
@@ -101,6 +103,7 @@ export function switchCSS( elementId, cssUrl, callback = noop ) {
 	}
 
 	loadCSS( cssUrl, currentLink, ( error, newLink ) => {
+		console.log( 'loadCSS:', elementId, cssUrl );
 		if ( currentLink && currentLink.parentElement ) {
 			currentLink.parentElement.removeChild( currentLink );
 		}

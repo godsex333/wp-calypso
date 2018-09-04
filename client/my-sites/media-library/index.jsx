@@ -28,6 +28,7 @@ import {
 	getKeyringConnections,
 } from 'state/sharing/keyring/selectors';
 import { requestKeyringConnections } from 'state/sharing/keyring/actions';
+import './style.scss';
 
 // External media sources that do not need a user to connect them
 // should be listed here.

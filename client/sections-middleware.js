@@ -55,6 +55,7 @@ function createPageDefinition( path, sectionDefinition ) {
 			400
 		);
 
+		console.log('preloading section', sectionDefinition.name, 'regex', pathRegex, 'path', context.path);
 		preload( sectionDefinition.name )
 			.then( requiredModules => {
 				if ( ! _loadedSections[ sectionDefinition.module ] ) {

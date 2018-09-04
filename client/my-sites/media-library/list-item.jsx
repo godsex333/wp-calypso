@@ -21,6 +21,7 @@ import ListItemDocument from './list-item-document';
 import { getMimePrefix } from 'lib/media/utils';
 import EditorMediaModalGalleryHelp from 'post-editor/media-modal/gallery-help';
 import { MEDIA_IMAGE_PHOTON } from 'lib/media/constants';
+import './list-item.scss';
 
 export default class extends React.Component {
 	static displayName = 'MediaLibraryListItem';

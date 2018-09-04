@@ -138,7 +138,7 @@ function getWebpackConfig( { cssFilename, externalizeWordPressPackages = false }
 			},
 			runtimeChunk: codeSplit ? { name: 'manifest' } : false,
 			moduleIds: 'named',
-			chunkIds: isDevelopment ? 'named' : 'natural',
+			chunkIds: 'named',
 			minimize: shouldMinify,
 			minimizer: [
 				new TerserPlugin( {

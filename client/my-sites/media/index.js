@@ -13,6 +13,7 @@ import { navigation, siteSelection, sites } from 'my-sites/controller';
 import mediaController from './controller';
 import { makeLayout, render as clientRender } from 'controller';
 import { getSiteFragment } from 'lib/route';
+import './style.scss';
 
 export default function() {
 

@@ -11,10 +11,14 @@ import photon from 'photon';
 /**
  * Internal dependencies
  */
-import ListItemFileDetails from './list-item-file-details';
 import Gridicon from 'gridicons';
-
 import { MEDIA_IMAGE_THUMBNAIL, MEDIA_IMAGE_PHOTON } from 'lib/media/constants';
+import ListItemFileDetails from './list-item-file-details';
+
+/**
+ * Style dependencies
+ */
+import './list-item-video.scss';
 
 export default class extends React.Component {
 	static displayName = 'MediaLibraryListItemVideo';

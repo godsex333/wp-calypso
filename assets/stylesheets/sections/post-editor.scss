@@ -9,12 +9,12 @@
 @import '../shared/mixins/long-content-fade';
 @import '../shared/mixins/placeholder';
 @import '../shared/typography';
+@import '../shared/variables';
 
 // Required to access variables or @extend styles
-@import '../main';
+// @import '../main';
 @import '../shared/forms';
 
-@import './media';
 @import 'post-editor/style';
 @import 'post-editor/edit-post-status/style';
 @import 'post-editor/editor-action-bar/style';

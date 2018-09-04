@@ -89,7 +89,6 @@ const sections = [
 		module: 'my-sites/media',
 		group: 'sites',
 		secondary: true,
-		css: 'media',
 	},
 	{
 		name: 'people',
@@ -327,7 +326,6 @@ sections.push( {
 	module: 'reader/full-post',
 	secondary: false,
 	group: 'reader',
-	css: 'reader-full-post',
 	enableLoggedOut: true,
 } );
 
@@ -410,7 +408,6 @@ sections.push( {
 	enableLoggedOut: true,
 	secondary: false,
 	isomorphic: true,
-	css: 'login',
 } );
 
 sections.push( {

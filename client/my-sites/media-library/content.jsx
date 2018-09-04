@@ -35,6 +35,11 @@ import MediaLibraryList from './list';
 import InlineConnection from 'my-sites/sharing/connections/inline-connection';
 import { isKeyringConnectionsFetching } from 'state/sharing/keyring/selectors';
 
+/**
+ * Style dependencies
+ */
+import './content.scss';
+
 class MediaLibraryContent extends React.Component {
 	static propTypes = {
 		site: PropTypes.object,

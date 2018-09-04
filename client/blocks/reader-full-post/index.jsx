@@ -65,6 +65,7 @@ import QueryPostLikes from 'components/data/query-post-likes';
 import getCurrentStream from 'state/selectors/get-reader-current-stream';
 import getNextItem from 'state/selectors/get-reader-stream-next-item';
 import getPreviousItem from 'state/selectors/get-reader-stream-prev-item';
+import './style.scss';
 
 export class FullPostView extends React.Component {
 	static propTypes = {
